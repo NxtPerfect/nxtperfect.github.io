@@ -1,0 +1,244 @@
+:root {
+    --background-color: #8217b4;
+    --accent-color: #0eecc6;
+    --font-color: #fafafa;
+    --font2-color: #420774
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+#banner {
+  width: 100%;
+  height: 10.5rem;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  border-bottom: 2rem solid var(--accent-color);
+}
+
+menu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  background-color: var(--background-color);
+  padding: 0;
+  padding-left: 17.5rem;
+  margin: 0;
+}
+
+menu-item {
+  font-size: 24px;
+  padding-top: 8.5rem;
+}
+
+#logo {
+  float: left;
+  margin: 0;
+  padding-left: 10em;
+  position: absolute;
+  z-index: 10;
+  box-shadow: 2rem;
+}
+
+#header-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 7rem 0 5rem 12rem;
+  color: var(--font-color);
+  font-size: 4rem;
+  text-align: right;
+  text-shadow: #000000 0.5rem 0.5rem;
+}
+
+#content-main {
+  display: flex;
+  padding: 13rem 15rem 2rem 42rem;
+  color: var(--font2-color);
+  text-shadow: #fafafa 0 0 2px;
+  font-size: 2rem;
+}
+
+#background-main {
+  height: 1080px;
+  width: 1920px;
+  background: no-repeat top/100% url(img/background.png) purple;
+  background-position-y: -6rem;
+}
+
+#about-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 2rem;
+  background-color: var(--accent-color);
+}
+
+.accent-button {
+  display: flex;
+  width: 5rem;
+  position: relative;
+  left: 100rem;
+}
+
+.accent-button:hover {
+  color: var(--background-color);
+}
+
+#header-additional {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: auto;
+  padding: 2rem;
+}
+
+#white-background {
+  clip-path: polygon(0 100%, 100% 0%, 100% 100%, 0% 100%);
+  background-color: #ffffff;
+  height: 11rem;
+  margin-top: -11rem;
+  margin-bottom: 0rem;
+}
+
+#background-second {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+#additional-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50rem;
+  color: #000000;
+}
+
+#content-additional {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
+#background-additional {
+  margin-top: -7%;
+  position: relative;
+}
+
+#misc-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1 1 0;
+  margin-bottom: 2rem;
+}
+
+.outter-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5rem solid var(--background-color);
+  border-radius: 50%;
+  height: 6rem;
+  width: 6rem;
+  font-size: 2rem;
+}
+
+footer {
+  display: flex;
+  flex: 1 1 0;
+  align-items: start;
+  justify-content: space-around;
+  padding: 4rem 2rem 4rem 2rem;
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+#footer-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  height: 10rem;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+#social-media-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#text-box {
+  border: 0.1rem solid black;
+  background-color: var(--font-color);
+  width: 25rem;
+  height: 1.5em;
+}
+
+.footer-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem 0 1rem 11.5em;
+  padding: 1rem;
+  background-color: var(--accent-color);
+  color: #000000; 
+}
+
+#register {
+  display: flex;
+  background-color: var(--background-color);
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 1rem 0 1rem;
+  color: var(--font-color);
+  height: 1.5rem;
+  width: 12rem;
+}
+
+#register:hover {
+  cursor: pointer;
+  color: var(--accent-color);
+}

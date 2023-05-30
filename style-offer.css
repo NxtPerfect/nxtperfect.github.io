@@ -1,0 +1,209 @@
+:root {
+    --background-color: #8217b4;
+    --accent-color: #0eecc6;
+    --font-color: #fafafa;
+    --font2-color: #420774
+}
+
+body {
+  padding: 0;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+#banner {
+  width: 100%;
+  height: 10.5rem;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  border-bottom: 2rem solid var(--accent-color);
+}
+
+menu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  background-color: var(--background-color);
+  padding: 0;
+  padding-left: 17.5rem;
+  margin: 0;
+}
+
+menu-item {
+  font-size: 24px;
+  padding-top: 8.5rem;
+}
+
+#logo {
+  float: left;
+  margin: 0;
+  padding-left: 10em;
+  position: absolute;
+  z-index: 10;
+  box-shadow: 2rem;
+}
+
+#content-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10rem;
+  color: var(--font-color);
+  font-size: 1.5rem;
+}
+
+#background-main {
+  height: 1080px;
+  width: 1920px;
+  background: no-repeat top/100% url(img/background.png) purple;
+  background-position-y: -6rem;
+}
+
+#white-background {
+  clip-path: polygon(0 100%, 100% 0%, 100% 100%, 0% 100%);
+  background-color: #ffffff;
+  height: 11rem;
+  margin-top: -11rem;
+  margin-bottom: 0rem;
+}
+
+#background-second {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1 1 0;
+  height: 35rem;
+  margin: 2rem;
+}
+
+#entry-tier, #first-tier, #family-tier, #second-tier, #third-tier{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 1 1 0;
+  background-color: var(--background-color);
+}
+
+#first-tier, #family-tier, #second-tier, #third-tier {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+
+#button-entry {
+  padding: 0.25rem;
+  margin: 0.25rem;
+  background-color: var(--background-color);
+  box-shadow: 0.3rem 0.3rem 0.25rem #000000;
+}
+
+#button {
+  padding: 0.25rem;
+  margin: 0.25rem;
+  background-color: var(--accent-color);
+  box-shadow: 0.3rem 0.3rem 0.25rem #000000;
+}
+
+#content-additional {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
+#background-additional {
+  margin-top: -10%;
+  position: relative;
+}
+
+footer {
+  display: flex;
+  flex: 1 1 0;
+  align-items: start;
+  justify-content: space-around;
+  padding: 4rem 2rem 4rem 2rem;
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+#footer-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  height: 10rem;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+  cursor: pointer;
+}
+
+a:hover {
+  color: red;
+}
+
+#social-media-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#text-box {
+  border: 0.1rem solid black;
+  background-color: var(--font-color);
+  width: 25rem;
+  height: 1.5em;
+}
+
+.footer-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem 0 1rem 11.5em;
+  padding: 1rem;
+  background-color: var(--accent-color);
+  color: #000000; 
+}
+
+#register {
+  display: flex;
+  background-color: var(--background-color);
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 1rem 0 1rem;
+  color: var(--font-color);
+  height: 1.5rem;
+  width: 12rem;
+}
+
+#register:hover {
+  cursor: pointer;
+  color: var(--accent-color);
+}
