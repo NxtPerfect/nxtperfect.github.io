@@ -11,6 +11,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #banner {
@@ -53,7 +54,7 @@ menu-item {
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 7rem 0 5rem 12rem;
+  padding: 3rem 0 5rem 12rem;
   color: var(--font-color);
   font-size: 4rem;
   text-align: right;
@@ -62,17 +63,17 @@ menu-item {
 
 #content-main {
   display: flex;
-  padding: 13rem 15rem 2rem 42rem;
+  flex: 1 1 0;
+  padding: 3rem 13rem 10rem 42rem;
   color: var(--font2-color);
   text-shadow: #fafafa 0 0 2px;
   font-size: 2rem;
 }
 
 #background-main {
-  height: 1080px;
-  width: 1920px;
-  background: no-repeat top/100% url(img/background.png) purple;
-  background-position-y: -6rem;
+  height: 100%;
+  width: 100%;
+  background: no-repeat top/cover  url(img/background.png) purple;
 }
 
 #about-button {
@@ -106,8 +107,8 @@ menu-item {
 #white-background {
   clip-path: polygon(0 100%, 100% 0%, 100% 100%, 0% 100%);
   background-color: #ffffff;
-  height: 11rem;
-  margin-top: -11rem;
+  height: 6rem;
+  margin-top: -6rem;
   margin-bottom: 0rem;
 }
 
@@ -130,6 +131,7 @@ menu-item {
 
 #content-additional {
   display: flex;
+  flex-direction: column;
   justify-content: start;
   align-items: center;
   margin: 0;
@@ -138,7 +140,7 @@ menu-item {
 }
 
 #background-additional {
-  margin-top: -7%;
+  margin-top: 0;
   position: relative;
 }
 
@@ -167,6 +169,77 @@ menu-item {
   height: 6rem;
   width: 6rem;
   font-size: 2rem;
+}
+
+#personal-data, .data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
+}
+
+.data-textarea, #email, #pwd, #pwd-confirm, #date, #pin {
+  width: 40rem;
+  height: 2rem;
+}
+
+.button {
+  background-color: var(--background-color);
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1 1 0;
+  margin: 2rem;
+  font-size: 1.75rem;
+}
+
+.product-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1 1 0;
+  margin: 0 10rem 0 10rem;
+  height: 35rem;
+  font-size: 1.75rem;
+}
+
+#entry-tier, #first-tier, #family-tier, #second-tier, #third-tier{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 1 1 0;
+  background-color: var(--background-color);
+}
+
+#first-tier, #family-tier, #second-tier, #third-tier {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+
+#button-entry {
+  padding: 0.25rem;
+  margin: 0.25rem;
+  background-color: var(--background-color);
+  box-shadow: 0.3rem 0.3rem 0.25rem #000000;
+}
+
+#button {
+  padding: 0.25rem;
+  margin: 0.25rem;
+  background-color: var(--accent-color);
+  box-shadow: 0.3rem 0.3rem 0.25rem #000000;
 }
 
 footer {
@@ -201,6 +274,7 @@ a {
 
 a:hover {
   color: var(--accent-color);
+  cursor: pointer;
 }
 
 #social-media-footer {
